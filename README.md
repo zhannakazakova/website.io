@@ -1,2 +1,2 @@
-# website.io
+# zhanna-kazakova.ru
 WebStudio GiraffeWeb
