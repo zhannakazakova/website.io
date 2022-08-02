@@ -1,0 +1,5 @@
+# by GiraffeWeb Studio
+
+User-agent: *
+Disallow: 
+Sitemap: https://zhanna-kazakova.ru/sitemap.xml
