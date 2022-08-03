@@ -1170,7 +1170,7 @@ ol {
 -----------------------*/
 
 .project-details {
-	padding-top: 70px;
+	padding-top: 55px;
 	padding-bottom: 50px;
 }
 
@@ -1458,7 +1458,7 @@ ol {
 
 .about {
 	padding-top: 60px;
-	padding-bottom: 80px;
+	padding-bottom: 70px;
 	overflow: hidden;
 }
 
@@ -3024,7 +3024,7 @@ ol {
 	}
 	.about .section-title h2 {
 		font-size: 28px;
-		line-height: 45px;
+		line-height: 35px;
 	}
 	.footer__top__text h2 {
 		font-size: 32px;
