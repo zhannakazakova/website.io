@@ -106,7 +106,7 @@ ol {
 }
 
 .spad {
-	padding-top: 0;
+	padding-top: 30px;
 	padding-bottom: 0;
 }
 
@@ -1070,8 +1070,8 @@ ol {
 -----------------------*/
 
 .latest {
-	padding-top: 120px;
-	padding-bottom: 90px;
+	padding-top: 50px;
+	padding-bottom: 60px;
 }
 
 .latest__btn {
@@ -1151,13 +1151,13 @@ ol {
 -----------------------*/
 
 .project__item {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
 .project__item img {
 	min-width: 100%;
-	margin-bottom: 26px;
+	margin-bottom: 10px;
 }
 
 .project__item h4 a {
@@ -1420,8 +1420,8 @@ ol {
 -----------------------*/
 
 .breadcrumb-option {
-	padding-top: 170px;
-	padding-bottom: 120px;
+	padding-top: 130px;
+	padding-bottom: 20px;
 }
 
 .breadcrumb__text h2 {
