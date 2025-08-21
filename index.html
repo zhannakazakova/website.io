@@ -336,7 +336,7 @@
                 overflow: hidden;
                 box-shadow: 0 4px 16px 0 rgba(0,0,0,0.07);
                 background: #fff;
-                transition: transform 0.2s, box-shadow 0.2s;
+                /* transition: transform 0.2s, box-shadow 0.2s; */
                 width: 100%;
                 max-width: 340px;
                 aspect-ratio: 4/3;
@@ -349,12 +349,11 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 16px;
-                transition: transform 0.2s;
+                /* transition: transform 0.2s; */
                 display: block;
-                cursor: zoom-in;
             }
             .collage-img-wrap:hover {
-                transform: translateY(-6px) scale(1.03);
+                /* transform: translateY(-6px) scale(1.03); */
                 box-shadow: 0 8px 24px 0 rgba(0,0,0,0.13);
             }
             @media (max-width: 1200px) {
@@ -385,33 +384,6 @@
                 }
             }
         </style>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // GLightbox init
-        if (typeof GLightbox !== 'undefined') {
-            var lightbox = GLightbox({
-                selector: '.glightbox',
-                openEffect: 'zoom',
-                closeEffect: 'zoom',
-                beforeSlideLoad: function() {
-                    document.body.style.overflow = 'hidden';
-                },
-                afterSlideLoad: function() {
-                    document.body.style.overflow = '';
-                }
-            });
-        }
-        // Prevent default link behavior for .glightbox
-        document.querySelectorAll('.glightbox').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                // Если GLightbox активен, отменяем переход по ссылке
-                if (typeof GLightbox !== 'undefined') {
-                    e.preventDefault();
-                }
-            });
-        });
-    });
-    </script>
     </section>
 
     <!-- Services GiraffeWeb -->
@@ -429,30 +401,48 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="services__item">
                         <img src="img/services/services-1.png" alt="" loading="lazy">
-                        <h4>Разработка дизайн-проекта</h4>
-                        <p>3D-визуализация (4-5 ракурсов на каждое помещение), альбом чертежей для строителей, подбор и расчёт количества чистовых материалов.</p>
-                        <h4 style='font-size:15px;text-transform: none;'>Цена за услугу: 3000 руб./кв.м.</h4>
+                        <h4>Эскизный проект</h4>
+                        <p>Включает выезд на замеры, обмерный план, план монтажных и демонтажных работ, 2-3 варианта расстановки мебели, план электрики, план потолков с расстановкой светильников, общую концепцию интерьера.</p>
+                        <h4 style='font-size:15px;text-transform: none;'>Стоимость — 2000 руб./кв.м.</h4>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="services__item">
                         <img src="img/services/services-2.png" alt="" loading="lazy">
-                        <h4>Авторское сопровождение</h4>
-                        <p>1-2 выезд в неделю, продолжительностью до 2-ух часов, ежедневная связь по телефону.</p>
-                        <h4 style='font-size:15px;text-transform: none;'>Цена за услугу: 20 тыс. руб./мес.,<br>10 тыс. руб./мес., если работы выполняются бригадой, с которой была уже совместная реализация проекта.</h4>
+                        <h4>Полный проект</h4>
+                        <p>Включает выезд на замеры, обмерный план, план монтажных и демонтажных работ, выводы сантехники, план напольных покрытий, 2-3 варианта расстановки мебели, план электрики, план потолков с расстановкой светильников, 3D-визуализация (4-5 ракурсов на каждое помещение), план отделки стен, развертки стен, выезды в магазины, комплектация и смета чистовых материалов.</p>
+                        <h4 style='font-size:15px;text-transform: none;'>Стоимость — 3000 руб./кв.м.</h4>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="services__item">
                         <img src="img/services/services-3.png" alt="" loading="lazy">
-                        <h4>Частичное авторское сопровождение</h4>
-                        <p>Оплата выездов на стройку по необходимости.</p>
-                        <h4 style='font-size:15px;text-transform: none;'>Цена за услугу: <br>2000 руб. – один выезд в городе.<br> 2500 руб. – выезд загород.</h4>
+                        <h4>Авторское сопровождение</h4>
+                        <p>Включает 1-2 выезда в неделю на стройку, ежедневную связь с прорабом и заказчиком, внесение правок в чертежи в текущем режиме стройки, связь с менеджерами по материалам и срокам доставки, подбор текстиля, декора и мебели.</p>
+                        <h4 style='font-size:15px;text-transform: none;'>При площади менее 50 кв.м. стоимость — 10 000 руб./мес., для площади более 50 кв.м. — 20 000 руб./мес.</h4>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="services__item">
                         <img src="img/services/services-4.png" alt="" loading="lazy">
+                        <h4>Архитектура</h4>
+                        <p>Проектирование частных домов до 300 кв.м., а также малых архитектурных форм: бани, беседки, крыльцо, терраса. Отделка фасадов (2 варианта).</p>
+                        <h4 style='font-size:15px;text-transform: none;'>Цена зависит от объёма работ и рассчитывается индивидуально.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="img/services/services-5.png" alt="" loading="lazy">
+                        <h4>Ландшафт, благоустройство</h4>
+                        <p>Включает выезд на замеры, обмерный план, 2-3 варианта зонирования пространства, план дорожных покрытий и мощений, план освещения территории с привязками, 3D-визуализация (стоимость рассчитывается отдельно), план озеленения с указанием видов растений.</p>
+                        <h4 style='font-size:15px;text-transform: none;'>Стоимость — 7000 руб./сотка.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <img src="img/services/services-6.png" alt="" loading="lazy">
                         <h4>Выезды в другие города</h4>
                         <p>Работаем по всей России. В городах Томск, Кемерово, Новосибирск, Красноярск - полный комплект услуг.</p>
                         <h4 style='font-size:15px;text-transform: none;'>По договорённости.</h4>
