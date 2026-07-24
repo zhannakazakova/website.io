@@ -445,7 +445,7 @@
                         <img src="img/services/services-2.png" alt="" loading="lazy">
                         <h4>Полный проект</h4>
                         <p>Включает выезд на замеры, обмерный план, план монтажных и демонтажных работ, выводы сантехники, план напольных покрытий, 2-3 варианта расстановки мебели, план электрики, план потолков с расстановкой светильников, 3D-визуализация (4-5 ракурсов на каждое помещение), план отделки стен, развертки стен, выезды в магазины, комплектация и смета чистовых материалов.</p>
-                        <h4 style='font-size:15px;text-transform: none;'>Стоимость — 3000 руб./кв.м.</h4>
+                        <h4 style='font-size:15px;text-transform: none;'>Стоимость — <span style="text-decoration: line-through">3000</span> руб./кв.м.<br>Стоимость — 2600 руб./кв.м.<br>Акция «Лето 2026» </h4>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -819,23 +819,6 @@
     <!-- Footer GiraffeWeb -->
     <footer class="footer set-bg" data-setbg="img/footer-bg.jpg" id='connect'>
         <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6">
-                        <div class="footer__top__text">
-                            <h2 style='font-size:30px;'>Необходима консультация?</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer__top__newslatter">
-                            <form method="post" action="https://formspree.io/f/xwkdkjkl">
-                                <input type="text" placeholder="Оставьте ваш номер" name='phone_main_page' style='border-radius: 15px;'>
-                                <button type="submit" style='border-radius: 0 15px 0 15px;'><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
@@ -875,7 +858,7 @@
                                 document.write(new Date().getFullYear());
                             </script> Все права защищены | Веб-разработка <i class="fa fa-heart-o"
                             aria-hidden="true"></i> <a href="https://dldevs.ru"
-                            target="_blank">DL Devs</a>
+                            target="_blank">DL Devs</a> &nbsp;|&nbsp; <a href="privacy.html" style='color:#dfa667;'>Политика конфиденциальности</a>
                         </p>
                     </div>
                 </div>
@@ -934,5 +917,7 @@ document.querySelectorAll('.img-fix img').forEach(img => {
   }
 });
 </script>
+    <script src="js/captcha.js"></script>
+    <script src="js/consent.js" defer></script>
 </body>
 </html>
